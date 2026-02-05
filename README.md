@@ -1,3 +1,41 @@
+# 🔐 Real-Time Phishing URL Detection Using ML on User Browsing Data
+
+## 📌 Problem Overview
+The domain of cybersecurity focuses on protecting users from online threats such as phishing, malware, and identity theft.  
+Phishing attacks involve creating fake websites that mimic legitimate services (e.g., banking, email, e-commerce) to steal sensitive user information like login credentials and financial details.
+
+These phishing websites are often short-lived and frequently change their URL structures, making traditional blacklist-based detection systems ineffective.  
+Therefore, an adaptive machine learning–based approach is required to analyze URL patterns and detect phishing websites in real time as users access them on a normal personal computer.
+
+---
+
+## 🎯 Problem Statement
+**Develop a machine learning model that classifies URLs as phishing or legitimate in real time with high accuracy, using URL-based features and continuously collected data from user inputs and synthetic phishing URL generation, to provide early warnings and reduce user exposure to fraudulent websites.**
+
+### This Statement:
+- Defines the task: Binary classification of URLs (phishing vs legitimate)  
+- Outlines the success criteria: High accuracy and low false positives  
+- Links to goals: User safety, automated phishing detection, real-time protection  
+
+---
+
+## 📥 Input Data Requirements
+
+### 🔹 Data Needed
+- URL-based lexical features:
+  - URL length  
+  - Number of dots  
+  - Presence of IP address  
+  - Special characters  
+  - Suspicious keywords (e.g., "login", "verify", "secure")  
+- Structural features:
+  - Number of subdomains  
+  - Use of HTTPS  
+- Optional behavioral features:
+  - Frequency of similar URL patterns over time  
+
+### 🔹 Data Format
+- CSV file with columns:
 
 ### 🔹 Data Sources (Own Dataset Creation)
 - Real-time URLs collected from user input on a normal PC  
